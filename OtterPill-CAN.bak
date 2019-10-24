@@ -74,68 +74,6 @@ F 3 "~" H 4150 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0114
-U 1 1 5CC79224
-P 5500 4750
-F 0 "#PWR0114" H 5500 4500 50  0001 C CNN
-F 1 "GND" H 5505 4577 50  0000 C CNN
-F 2 "" H 5500 4750 50  0001 C CNN
-F 3 "" H 5500 4750 50  0001 C CNN
-	1    5500 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 4750 5500 4750
-Wire Wire Line
-	5150 4450 5150 4350
-Wire Wire Line
-	5500 4450 5500 4350
-Connection ~ 5500 4750
-$Comp
-L Device:R R4
-U 1 1 5CC77C43
-P 5500 4600
-F 0 "R4" H 5570 4646 50  0000 L CNN
-F 1 "3k3" H 5570 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 4600 50  0001 C CNN
-F 3 "~" H 5500 4600 50  0001 C CNN
-	1    5500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5CC777A1
-P 5150 4600
-F 0 "R3" H 5220 4646 50  0000 L CNN
-F 1 "3k3" H 5220 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 4600 50  0001 C CNN
-F 3 "~" H 5150 4600 50  0001 C CNN
-	1    5150 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5CC77263
-P 5500 4200
-F 0 "D2" V 5539 4083 50  0000 R CNN
-F 1 "LED GREEN" V 5448 4083 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5500 4200 50  0001 C CNN
-F 3 "~" H 5500 4200 50  0001 C CNN
-	1    5500 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5CC766AA
-P 5150 4200
-F 0 "D1" V 5189 4083 50  0000 R CNN
-F 1 "LED RED" V 5098 4083 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5150 4200 50  0001 C CNN
-F 3 "~" H 5150 4200 50  0001 C CNN
-	1    5150 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Interface_CAN_LIN:TJA1051T-3 U1
 U 1 1 5DB25499
 P 5650 2700
@@ -230,10 +168,6 @@ $EndComp
 Text GLabel 8650 2650 2    50   Input ~ 0
 TXD
 Text GLabel 9850 3450 0    50   Input ~ 0
-RXD
-Text GLabel 5500 4050 1    50   Input ~ 0
-TXD
-Text GLabel 5150 4050 1    50   Input ~ 0
 RXD
 Text GLabel 9850 2650 0    50   Input ~ 0
 413
@@ -409,7 +343,7 @@ U 1 1 5DB316C5
 P 8900 1400
 F 0 "J3" H 8988 1366 50  0000 L CNN
 F 1 "CAN" H 8988 1275 50  0000 L CNN
-F 2 "go-e:JST_XH_3Pin" H 8900 1400 50  0001 C CNN
+F 2 "go-e:JST_XH_3Pin_short_pads" H 8900 1400 50  0001 C CNN
 F 3 "~" H 8900 1400 50  0001 C CNN
 	1    8900 1400
 	1    0    0    -1  
@@ -425,9 +359,9 @@ F 3 "" H 8700 1400 50  0001 C CNN
 	1    8700 1400
 	0    1    1    0   
 $EndComp
-Text GLabel 8700 1300 0    50   Input ~ 0
-CAN_H
 Text GLabel 8700 1500 0    50   Input ~ 0
+CAN_H
+Text GLabel 8700 1300 0    50   Input ~ 0
 CAN_L
 $Comp
 L power:GND #PWR0107
