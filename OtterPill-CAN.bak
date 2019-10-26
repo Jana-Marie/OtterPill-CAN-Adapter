@@ -68,7 +68,7 @@ U 1 1 5DB0ECB3
 P 4150 2900
 F 0 "J7" H 4044 2675 50  0000 C CNN
 F 1 "PAD" H 4044 2766 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4150 2900 50  0001 C CNN
+F 2 "otter:PinHeader_1x01_P2.54mm_Vertical_NOSILK" H 4150 2900 50  0001 C CNN
 F 3 "~" H 4150 2900 50  0001 C CNN
 	1    4150 2900
 	-1   0    0    1   
@@ -119,9 +119,9 @@ F 3 "" H 5650 2300 50  0001 C CNN
 	1    5650 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 2350 2    50   Input ~ 0
+Text GLabel 6650 2600 2    50   Input ~ 0
 CAN_H
-Text GLabel 6900 3050 2    50   Input ~ 0
+Text GLabel 6650 2800 2    50   Input ~ 0
 CAN_L
 $Comp
 L Device:R_Small R2
@@ -213,7 +213,7 @@ U 1 1 5DB2AF85
 P 8450 2550
 F 0 "J1" H 8556 2828 50  0000 C CNN
 F 1 "pinh" H 8556 2737 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8450 2550 50  0001 C CNN
+F 2 "otter:PinHeader_1x04_P2.54mm_Vertical_NOSILK" H 8450 2550 50  0001 C CNN
 F 3 "~" H 8450 2550 50  0001 C CNN
 	1    8450 2550
 	1    0    0    -1  
@@ -224,47 +224,17 @@ U 1 1 5DB2B384
 P 10050 2950
 F 0 "J2" H 10023 2880 50  0000 R CNN
 F 1 "pinh" H 10023 2971 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10050 2950 50  0001 C CNN
+F 2 "otter:PinHeader_1x11_P2.54mm_Vertical_NOSILK" H 10050 2950 50  0001 C CNN
 F 3 "~" H 10050 2950 50  0001 C CNN
 	1    10050 2950
 	-1   0    0    1   
 $EndComp
-Text GLabel 6650 3300 3    50   Input ~ 0
-RXD
-$Comp
-L Device:Jumper_NC_Dual JP2
-U 1 1 5DB2C0C4
-P 6650 3050
-F 0 "JP2" V 6696 3152 50  0000 L CNN
-F 1 "WS2812" V 6605 3152 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6650 3050 50  0001 C CNN
-F 3 "~" H 6650 3050 50  0001 C CNN
-	1    6650 3050
-	0    -1   -1   0   
-$EndComp
 Connection ~ 6250 2800
 Wire Wire Line
-	6900 3050 6750 3050
-Wire Wire Line
 	6250 2800 6650 2800
-$Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5DB2CF9D
-P 6650 2350
-F 0 "JP1" V 6696 2452 50  0000 L CNN
-F 1 "VIN" V 6605 2452 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6650 2350 50  0001 C CNN
-F 3 "~" H 6650 2350 50  0001 C CNN
-	1    6650 2350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6650 2600 6250 2600
 Connection ~ 6250 2600
-Text GLabel 6650 2100 1    50   Input ~ 0
-VIN
-Wire Wire Line
-	6900 2350 6750 2350
 $Comp
 L Device:R R5
 U 1 1 5DB2E287

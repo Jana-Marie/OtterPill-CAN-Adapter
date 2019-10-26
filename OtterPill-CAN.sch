@@ -119,9 +119,9 @@ F 3 "" H 5650 2300 50  0001 C CNN
 	1    5650 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 2350 2    50   Input ~ 0
+Text GLabel 6650 2600 2    50   Input ~ 0
 CAN_H
-Text GLabel 6900 3050 2    50   Input ~ 0
+Text GLabel 6650 2800 2    50   Input ~ 0
 CAN_L
 $Comp
 L Device:R_Small R2
@@ -229,42 +229,12 @@ F 3 "~" H 10050 2950 50  0001 C CNN
 	1    10050 2950
 	-1   0    0    1   
 $EndComp
-Text GLabel 6650 3300 3    50   Input ~ 0
-RXD
-$Comp
-L Device:Jumper_NC_Dual JP2
-U 1 1 5DB2C0C4
-P 6650 3050
-F 0 "JP2" V 6696 3152 50  0000 L CNN
-F 1 "WS2812" V 6605 3152 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6650 3050 50  0001 C CNN
-F 3 "~" H 6650 3050 50  0001 C CNN
-	1    6650 3050
-	0    -1   -1   0   
-$EndComp
 Connection ~ 6250 2800
 Wire Wire Line
-	6900 3050 6750 3050
-Wire Wire Line
 	6250 2800 6650 2800
-$Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5DB2CF9D
-P 6650 2350
-F 0 "JP1" V 6696 2452 50  0000 L CNN
-F 1 "VIN" V 6605 2452 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6650 2350 50  0001 C CNN
-F 3 "~" H 6650 2350 50  0001 C CNN
-	1    6650 2350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6650 2600 6250 2600
 Connection ~ 6250 2600
-Text GLabel 6650 2100 1    50   Input ~ 0
-VIN
-Wire Wire Line
-	6900 2350 6750 2350
 $Comp
 L Device:R R5
 U 1 1 5DB2E287
@@ -289,54 +259,6 @@ Wire Wire Line
 Connection ~ 4500 2450
 Wire Wire Line
 	4500 2450 4400 2450
-$Comp
-L Device:C_Small C1
-U 1 1 5DB30195
-P 6350 1300
-F 0 "C1" H 6442 1346 50  0000 L CNN
-F 1 "100n 50V" H 6442 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6350 1300 50  0001 C CNN
-F 3 "~" H 6350 1300 50  0001 C CNN
-	1    6350 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5DB301A2
-P 6350 1400
-F 0 "#PWR0103" H 6350 1150 50  0001 C CNN
-F 1 "GND" H 6355 1227 50  0000 C CNN
-F 2 "" H 6350 1400 50  0001 C CNN
-F 3 "" H 6350 1400 50  0001 C CNN
-	1    6350 1400
-	1    0    0    -1  
-$EndComp
-Text GLabel 6350 1200 1    50   Input ~ 0
-VIN
-$Comp
-L Device:C_Small C2
-U 1 1 5DB30CB8
-P 6900 1300
-F 0 "C2" H 6992 1346 50  0000 L CNN
-F 1 "100n 50V" H 6992 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 1300 50  0001 C CNN
-F 3 "~" H 6900 1300 50  0001 C CNN
-	1    6900 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5DB30CBF
-P 6900 1400
-F 0 "#PWR0105" H 6900 1150 50  0001 C CNN
-F 1 "GND" H 6905 1227 50  0000 C CNN
-F 2 "" H 6900 1400 50  0001 C CNN
-F 3 "" H 6900 1400 50  0001 C CNN
-	1    6900 1400
-	1    0    0    -1  
-$EndComp
-Text GLabel 6900 1200 1    50   Input ~ 0
-VIN
 $Comp
 L Connector_Generic_MountingPin:Conn_01x03_MountingPin J3
 U 1 1 5DB316C5
